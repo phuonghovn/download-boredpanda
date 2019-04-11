@@ -43,7 +43,7 @@ var fs = require('fs');
           })
       })
 
-      var file = fs.createWriteStream('title.txt');
+      var file = fs.createWriteStream('./public/boredpanda/title.txt');
       file.on('error', function(err) { /* error handling */ });
       arrTitle.forEach(function(v) { file.write(v + '\n'); });
       file.end();
